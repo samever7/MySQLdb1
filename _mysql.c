@@ -2002,7 +2002,7 @@ _mysql_ConnectionObject_ping(
 	int r, reconnect = -1;
 	if (!PyArg_ParseTuple(args, "|I", &reconnect)) return NULL;
 	check_connection(self);
-	if ( reconnect != -1 ) self->connection.reconnect = reconnect;
+	// if ( reconnect != -1 ) self->connection.reconnect = reconnect;
 	Py_BEGIN_ALLOW_THREADS
 	r = mysql_ping(&(self->connection));
 	Py_END_ALLOW_THREADS

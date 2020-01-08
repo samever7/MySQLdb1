@@ -8,7 +8,7 @@ maintained, there will not be a lot of new feature development.
 
 My modify
 -----
-remove line .reconnect which caused pip intall error.
+Comment out  line 2005 in _mysql.c for  .reconnect which caused pip intall error.
 
 TODO
 ----
